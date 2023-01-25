@@ -1,0 +1,53 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+###fbsetbg -c /home/srsantos/.fluxbox/backgrounds/fluxbox_wallpaper.png
+
+# Change your keymap:
+###xmodmap "/home/srsantos/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+###/usr/sbin/restorecond -u &
+
+###compton &
+
+###sleep 1 && gnome-volume-control-applet &
+###sleep 1 && gnome-power-manager &
+###sleep 1 && blueman-applet &
+###sleep 1 && nm-applet --sm-disable &
+###sleep 1 && /usr/libexec/polkit-gnome-authentication-agent-1 &
+###sleep 1 && gpk-update-icon &
+###sleep 3 && conky -c /home/srsantos/.conky_fluxbox &
+###sleep 1 && /usr/bin/canberra-gtk-play --id="service-login" --description="GNOME Login" &
+###sleep 1 && /usr/X11R6/bin/xautolock -time 10 -locker slock -killtime 10 -killer 'xset dpms force off' &
+
+sleep 1 && /usr/bin/volnoti -t 4 -a 1 &
+sleep 1 && /usr/bin/xvisbell &
+sleep 1 && /usr/bin/setroot -s /home/srsantos/.i3/wallpapers/dark-metal-grids/dark-metal-grid-8.png &
+sleep 1 && /usr/local/bin/vpn_pid_checker_notification_loop.sh &
+sleep 1 && /usr/bin/compton --config /home/srsantos/.config/compton/compton_simple.conf &>/dev/null &
+sleep 1 && /usr/local/bin/toggle_xautolock.sh &
+sleep 1 && /usr/bin/nm-applet &
+sleep 1 && /usr/bin/blueman-applet &>/dev/null &
+sleep 1 && /usr/bin/pasystray &
+sleep 1 && /usr/bin/xcalib -d :0 /home/srsantos/.color/icc/Lenovo_Twist_s230u_IPS.icm &
+sleep 1 && /usr/local/bin/touchpad_toggle.sh &
+sleep 1 && /usr/bin/unclutter --timeout 10 --jitter 50 --exclude-root --ignore-scrolling --fork &
+sleep 1 && /usr/bin/dunst -config /home/srsantos/.config/dunst/dunstrc &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/srsantos/.fluxbox/log"

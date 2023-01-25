@@ -1,0 +1,30 @@
+# Start gnome-keyring-daemon
+if [ -n "$DESKTOP_SESSION" ]; then
+    eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets)
+    export SSH_AUTH_SOCK
+fi
+
+# Start the rxvt daemon in the background
+/usr/bin/urxvtd -q -f -o
+
+# Blank the screen after 10 mins of inactivity
+/usr/bin/xset dpms 0 0 600
+
+# Increase the repeat rate of the keyboard
+/usr/bin/xset r rate 400 44
+
+# Turn off caps locks
+/usr/bin/setxkbmap -option caps:none
+
+# Enable killing X via key combo
+/usr/bin/setxkbmap -option terminate:ctrl_alt_bksp
+
+# Enable caps lock to shift for UK/GB keyboard
+###/usr/local/bin/swap_caps_lshift.sh
+
+# Set auto-suspend after 30 mins of inactivity
+/usr/bin/xautolock -time 30 -locker "systemctl suspend" -detectsleep &
+
+# Set screenlock for all desktops
+##/usr/bin/xss-lock --ignore-sleep -- /usr/bin/i3lock-fancy -f 'Terminus-(TTF)-Bold' -t "Hello Scott, waiting for your fingerprint..." &
+/usr/bin/xss-lock -- i3lock -f -b -i /home/srsantos/.i3/wallpapers/dark-metal-grids/dark-metal-grid-8_1600x900.png &

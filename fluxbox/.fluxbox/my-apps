@@ -1,0 +1,38 @@
+[app] (name=Conky) (class=Conky)
+  [Alpha]	{180}
+[end]
+[app] (name=xterm)
+  [Dimensions]	{35% 43%}
+  [Deco]	{TOOL}
+  [Maximized]	{yes}
+  [Alpha]	{190}
+[end]
+[app] (name=libreoffice) (class=libreoffice-writer)
+  [Maximized]	{yes}
+[end]
+[app] (name=libreoffice) (class=libreoffice-calc)
+  [Maximized]	{yes}
+[end]
+[app] (name=nautilus) (class=Nautilus)
+  [Position]	(UPPERLEFT)	{7% 5%}
+[end]
+[app] (name=blueman-manager) (class=Blueman-manager)
+  [Position]	(UPPERLEFT)	{36% 35%}
+[end]
+[app] (name=Eclipse) (class=Eclipse)
+  [Dimensions]	{98% 99%}
+  [Position]	(UPPERLEFT)	{0% 0%}
+[end]
+[app] (name=inkscape) (class=Inkscape)
+  [Maximized]	{yes}
+[end]
+[app] (name=gpk-update-icon) (class=Gpk-update-icon)
+  [Position]	(UPPERLEFT)	{32% 35%}
+[end]
+[app] (name=rstudio) (class=Rstudio)
+  [Position]	(UPPERLEFT)	{0% 0%}
+  [Maximized]	{no}
+[end]
+[app] (name=.+)
+  [Position]	(CENTER)	{0 0}
+[end]

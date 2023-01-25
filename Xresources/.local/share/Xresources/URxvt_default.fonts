@@ -1,0 +1,14 @@
+! Comma separated list of font names that are checked in order when trying to find glyphs for characters.
+
+!URxvt*font: xft:PragmataPro:size=9, xft:PragmataPro\ for\ Powerline:size=9
+!URxvt*boldFont: xft:PragmataPro:size=9:bold, xft:PragmataPro\ for\ Powerline:size=9:bold
+!URxvt*italicFont: xft:PragmataPro:size=9:italic, xft:PragmataPro\ for\ Powerline:size=9:italic
+!URxvt*boldItalicFont: xft:PragmataPro:size=9:bold:italic, xft:PragmataPro\ for\ Powerline:size=9:bold:italic
+!URxvt*letterSpace: -2
+!URxvt.lineSpace: -1
+
+URxvt*font: xft:xos4 Terminus:size=10
+URxvt*boldFont: xft:xos4 Terminus:size=10:bold
+URxvt*italicFont: xft:xos4 Terminus:size=10:italic
+URxvt*boldItalicFont: xft:xos4 Terminus:size=10:bold:italic
+
