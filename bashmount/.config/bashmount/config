@@ -16,7 +16,7 @@ udisks='1'
 # blacklisting internal volumes that you don't want to see.
 show_internal='1'
 show_removable='1'
-#show_optical='1'
+show_optical='1'
 show_commands='1'
 
 # When device names are really long, we abbreviate the output slightly.
@@ -63,9 +63,9 @@ default_mount_options='--options nosuid,noexec,noatime'
 #}
 
 # Uncomment this example to launch midnight commander in a new window.
-#filemanager() {
-#   /usr/bin/uxterm -wf -e /usr/bin/mc "$1" & >/dev/null 2>&1
-#}
+filemanager() {
+   /usr/bin/uxterm -wf -e /usr/bin/mc "$1" & >/dev/null 2>&1
+}
 
 # Customize the command used for mounting. You should not need to change this.
 # Open /usr/bin/bashmount in a text editor to see the default commands.

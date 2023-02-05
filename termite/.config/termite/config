@@ -10,6 +10,7 @@ dynamic_title = true
 urgent_on_bell = true
 clickable_url = false
 ##font = Terminus 14px
+##font = Iosevka Term SS03,Iosevka Term SS03 Regular, FontAwesome 10
 font = Roboto Mono for Powerline, FontAwesome 9
 ##font = Pragmata Pro for Powerline, FontAwesome 10
 scrollback_lines = 65535
@@ -28,7 +29,7 @@ cursor_blink = on
 cursor_shape = ibeam
 
 # $BROWSER is used by default
-browser = luakit
+browser = firefox
 
 # word characters used for word selection
 # (default if unset: all graphic non-punctuation/space characters)
