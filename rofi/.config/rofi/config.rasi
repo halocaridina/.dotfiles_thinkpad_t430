@@ -1,6 +1,6 @@
 configuration {
-    modi:		     [window,run,drun,ssh];
-    font:                    "Roboto Mono for Powerline Regular 12";
+    modi:                    [window,run,drun,ssh];
+    font:                    "Roboto Mono Medium for Powerline Regular 12";
     fixed-num-lines:         false;
     show-icons:              false;
     sidebar-mode:            true;
