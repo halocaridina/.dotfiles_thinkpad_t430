@@ -25,10 +25,10 @@
 "overlay_scroll_bars": "disabled",
 "default_line_ending": "unix",
 "font_face": "Roboto Mono for Powerline",
-"font_size": 9,
+"font_size": 10,
 "spell_check": true,
 "highlight_modified_tabs": true,
-"color_scheme": "auto",
+"color_scheme": "Mariana.sublime-color-scheme",
 "theme": "auto",
 "default_dir": "/home/srsantos",
 	"ignored_packages":

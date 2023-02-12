@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# Set berry decoration geometry
+berryc border_width       5
+berryc inner_border_width 3
+berryc title_height       30
+berryc top_gap            30
+
+# Set berry decoration colors
+berryc focus_color         292D3E
+berryc unfocus_color       292D3E
+berryc inner_focus_color   FFCB6B
+berryc inner_unfocus_color 565679
+berryc text_focus_color    ffffff
+berryc text_unfocus_color  eeeeee
+
+# Other berry options
+berryc smart_place "true"
+berryc draw_text   "true"
+berryc edge_lock   "true"
+berryc set_font    "Dina-9"
+
+# auto start programs and set wallpaper
+/usr/bin/compton --config /home/srsantos/.config/picom_compton/picom.conf &>/dev/null &
+/usr/bin/xcalib -d :0 /home/srsantos/.color/icc/Monitor_5-24-2012_1.icc
+/usr/local/bin/touchpad_toggle.sh &
+/usr/bin/unclutter --timeout 10 --jitter 50 --exclude-root --ignore-scrolling --fork
+/usr/bin/dunst -config /home/srsantos/.config/dunst/dunstrc &
+/usr/bin/opensc-notify &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+/home/srsantos/.config/feh/fehbg &
+
+
+# auto start screensaver and locker
+/usr/bin/xset s 590 10
+/usr/bin/xset dpms 0 0 605
+/usr/bin/xss-lock -n /usr/local/bin/dim-screen_xss-lock.sh -l -- /usr/local/bin/xsecurelock_optimized.sh &
