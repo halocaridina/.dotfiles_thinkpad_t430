@@ -1,1 +1,6 @@
-raspi3	srsantos	192.168.1.15	22 ssh
+DietPI	root	192.168.1.74	22 ssh
+RSPB_Webcam	pi	santos-raspberrypi-weather-cam.local	22 ssh
+odroid_C4	srsantos	odroid-c4.local	22 ssh
+odroid_XU4	srsantos	odroid-xu4.local	22 ssh
+raspi3	srsantos	raspberrypi3.local	22 ssh
+raspi_0-2	pi	the-santos-lab.dynu.net	22 ssh

@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	/usr/bin/termite
+    /usr/bin/termite
 
-# program launcher
+# program launchers
 super + d
-	/usr/bin/rofi -show run
+    /usr/bin/rofi -show run
 
 super + shift + n
     /usr/bin/networkmanager_dmenu
@@ -21,7 +21,7 @@ super + shift + e
 
 # make sxhkd reload its configuration files:
 super + Escape
-	/usr/bin/pkill -USR1 -x sxhkd
+    /usr/bin/pkill -USR1 -x sxhkd
 
 #
 # media hotkeys
